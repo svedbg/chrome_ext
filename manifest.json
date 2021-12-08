@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Add Req Header Connection Close",
+    "description": "Always adds connection:close req header",
+    "version": "0.0.1",
+    "icons": {
+        "16": "logo/logo_16.png",
+        "24": "logo/logo_24.png",
+        "32": "logo/logo_32.png",
+        "48": "logo/logo_48.png",
+        "128": "logo/logo_128.png"
+    },
+    "options_page": "settings/settings.html",
+    "action": {
+        "default_title": "Always adds connection:close req header"
+    },
+    "declarative_net_request" : {
+      "rule_resources" : [{
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    },
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    }
+}
