@@ -5,12 +5,13 @@
     "action": {
       "type": "modifyHeaders",
       "requestHeaders": [
-        {"header": "connection", "operation": "set", "value": "close"}
+        {"header": "connection", "operation": "set", "value": "close"},
+        {"header": "host", "operation": "set", "value": "https://proxy.edited.com"}
       ]
     },
     "condition": {
       "domains": ["localhost"],
-      "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "webtransport", "other"]
+      "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"]
     }
   }
 ]
