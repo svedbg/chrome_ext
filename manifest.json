@@ -22,7 +22,9 @@
       }]
     },
     "permissions": [
-      "declarativeNetRequest"
+      "declarativeNetRequest",
+      "proxy",
+      "webRequest"
     ],
     "host_permissions": [
         "*://*/*"
